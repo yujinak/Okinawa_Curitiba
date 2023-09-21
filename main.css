@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: whitesmoke;
+}
+
+header {
+  padding: 35px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 5px solid rgb(252, 0, 0);
+  border-top: 5px solid rgb(252, 0, 0);
+  background-color: rgb(255, 255, 255);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.botao-claro-escuro {
+  height: 24px;
+}
+
+header menu ul {
+  display: inline;
+}
+
+.destaque {
+  padding: 80px 50px;
+}
+
+.destaque img {
+  display: flex;
+  margin: 0 auto;
+}
+
+#foto-principal {
+  display: flex;
+  margin: 0 auto;
+}
+
+.apresentacao {
+  margin: 0 auto;
+  padding: 36px;
+  text-align: center;
+}
+
+.apresentacao p {
+  padding: 16px 120px 60px;
+}
+
+footer {
+  padding: 60px;
+  background-color: red;
+}
