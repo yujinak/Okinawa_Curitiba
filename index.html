@@ -11,28 +11,31 @@
 
   <body>
     <header>
+      <div class="navbar">
       <a href="./index.html">
         <img src="./imagens/logo horizontal.png" alt="" />
       </a>
-      <menu>
+      <nav class=" ">
         <ul>
           <li><a href="">Sobre</a></li>
           <li><a href="">Atividades</a></li>
           <li><a href="">Associados</a></li>
         </ul>
-      </menu>
-      <button class="botao-claro-escuro">Claro/escuro</button>
+      </nav>
+      <button class="botao-claro-escuro btn btn-danger">Claro/escuro</button>
+      </div>
     </header>
 
     <section class="destaque">
-        <div data-aos="fade-left"
+        <div class=""
+        data-aos="fade-left"
         data-aos-offset="500"
         data-aos-easing="ease-in-sine">
         <img src="https://media.istockphoto.com/id/1436914692/pt/foto/beautiful-view-of-the-park-with-sakura-cherry-blossoms-okinawa-japan.webp?s=612x612&w=is&k=20&c=lnj9bzy7LmFdkxaz83oqbi-aAkr8B4pLqGyEJgf0lgs=" alt="">
       </div>
       <div data-aos="fade-right"
-       data-aos-offset="500"
-       data-aos-easing="ease-in-sine">
+        data-aos-offset="500"
+        data-aos-easing="ease-in-sine">
           <img src="https://media.istockphoto.com/id/1436914692/pt/foto/beautiful-view-of-the-park-with-sakura-cherry-blossoms-okinawa-japan.webp?s=612x612&w=is&k=20&c=lnj9bzy7LmFdkxaz83oqbi-aAkr8B4pLqGyEJgf0lgs=" alt="">
         </div>
         <div data-aos="fade-left"
@@ -42,20 +45,50 @@
       </div>
     </section>
 <section>
-  <img id="foto-principal" src="https://via.placeholder.com/800x500" alt="">
+  <img id="foto-principal" class="" src="https://via.placeholder.com/800x500" alt="">
 </section>
     <section class="apresentacao">
       <h2>Mensoree!</h2>
       <p>Seja bem-vindo(a) à pagina da Associação Okinawa-Kenjin de Curitiba! Nós somos uma entidade sem fins lucrativos, com o objetivo central de difundir e conservar a cultura de Okinawa, uma das províncias do Japão. </p>
     </section>
+<hr>
+    <section>
+      <h2>Contate nossa Associação</h2>
+      <form action="/mensagem" method="post" class="form-contato">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <div>
+          <div>
+            <label for="form-nome">Qual seu nome?</label><br>
+            <input type="text" id="form-nome">
+          </div>
+          <div>
+            <label for="form-email">Qual seu email?</label><br>
+            <input type="email" id="form-email">
+          </div>
+          <div>
+            <label for="form-tel">Possui um celular para contato?</label><br>
+            <input type="tel" id="form-tel">
+          </div>
+        </div>
+
+        <div>
+          <label for="form-mensagem">Envie uma mensagem para nós!</label><br>
+          <textarea name="" id="form-mensagem" cols="30" rows="10" width="40%" style="resize: none;"></textarea><br>
+          <input type="submit" value="Enviar">
+        </div>
+
+      </form>
+    </section>
+    
+  <footer>
+Criado por <a href="">Gabriel Yuji Nakashima</a>
+  </footer>
+  
+  <script src="./main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
       </script>
-  <footer>
-Criado por <a href="">Gabriel Yuji Nakashima</a>
-  </footer>
   </body>
 </html>
